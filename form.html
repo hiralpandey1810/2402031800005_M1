@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <h1 align="center"> Registration Form</h1>
+ <table border=3 align="center">
+    <form id="registrationform" onsubmit="return validateForm()">
+
+    <tr>
+        <td><label for="Firstname"> First Name : </label></td>
+        <td> <input type="text" id="Firstname" name="Firstname" required> </td>
+    </tr>
+    <tr>
+        <td><label for="Lastname" > Last Name :</label></td>
+        <td> <input type="text" id="Lastname" name="Lastname" required></td>
+    </tr>
+
+    <tr> 
+        <td><label for="Contact" > Contact : </label></td>
+        <td> <input type="number" id="Contact" name="Contact" ></td>
+    </tr>
+    <tr> 
+        <td> <label for="landline" > Landline no :</label></td>
+        <td> <input type="number" id="Landline" name= "Landline" ></td>  
+      </tr>
+      <tr> 
+        <td> <label for="Email"> Email : </label></td>
+        <td> <input type="email" id="Email" name="Email" required</td>
+      </tr>
+      <tr> 
+        <td> <label for="passwd"> Password :</label></td>
+        <td> <input type="password" id="passwd" name="passwd" required</td>
+      </tr>
+      <tr>
+        <td> <label for="DOB"> Date of Birth :</label></td>
+        <td> <input type="date" id="DOB" name="DOB" required</td>
+      </tr>
+      <tr>
+        <td>  AGE : </td>
+        <td> <input type="number" id="age" name="age" min="18" max="100"></td>
+
+      </tr>
+      <tr>
+        <td> Gender :</td>
+        <td> <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td> <input type="text" id="address"></td>
+      </tr>
+      <tr> 
+        <td> City : </td>
+        <td> <select name="city" id="city">
+        <option value="Ahmedabad"> Ahmedabad </option>
+    <option value="gandhinagar">Gandhinagar</option> 
+<option value="Vapi"> Vapi </option></select> </td>
+        
+      </tr>
+      <tr>
+        <td>Pincode :</td>
+        <td> <imput type="number " id="number" ></imput></td>
+      </tr>
+      <tr>
+        <td> Joining Date:</td>
+        <td> <input type="date" id="date" name="date"></td>
+      </tr>
+      <tr>
+        <td> Confirm your Form:</td>
+        <td><input type="button" id="submit" value="Submit"> </td>
+      </tr>
+ </table>
+    
+</body>
+</html>
