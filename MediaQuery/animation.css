@@ -1,0 +1,30 @@
+ 
+    .box{
+        width: 100px;
+        height: 200px;
+        background-color: red;
+        animation: colorChange 3s infinite;
+    }
+    @keyframes colorChange{
+
+        0%{
+            background-color: red;
+        }
+        25%{
+            background-color: orange;
+        }
+        50%{
+            background-color: yellow;
+        }
+        75%{
+            background-color: green;
+        }
+        100%{
+            background-color: blue;
+        }
+    }
+.box{
+    Height: 50px;
+    width: 80px;
+    align-items: center;
+}

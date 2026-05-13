@@ -1,0 +1,10 @@
+body{
+background: linear-gradient(to right, white, green)
+}
+div{
+   color: black; 
+}
+.menu{
+    display:flex;
+    gap: 25px;
+}

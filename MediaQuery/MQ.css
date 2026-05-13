@@ -1,0 +1,13 @@
+header{
+    background-color: aqua;
+    height: 30px;
+    width:70px;
+}
+@media screen and (max-width:600px) {
+header{
+    background-color: blanchedalmond;
+    height: 15px;
+    width: 65px;
+}
+    
+}
