@@ -47,6 +47,7 @@ h3{
     border-style: groove;
 }
 h2{
+    background-color: blue  ;
     position: relative;
     left: 50px;
     top: 100px;
@@ -75,4 +76,7 @@ h6{
     background-color: purple;
     width: 80%;
     top: auto;
+}
+#JS{
+    background-color: purple;
 }
