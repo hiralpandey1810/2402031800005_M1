@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops with JS</title>
+    <link rel="stylesheet" href="fun.css">
+</head>
+<body>
+    <script>
+        for(var a=0; a<=10;a++){
+            document.write(a + "<br>");
+        }
+    </script>
+    <h2>While loop</h2>
+
+    <script>
+        var b = 10;
+        while(b>=1)
+    {
+        document.write(b + "<br>");
+        b--;
+    }
+    </script>
+    <h2>while-loop Even number </h2>
+    <script>
+        var c=1;
+        while(c<=20){
+
+            if(c%2==0){
+                document.write(c + "<br>");
+            }
+            c++
+        }
+    </script>
+    <h2> do-while 1-15 odd number</h2>
+    <script>
+        var d=1;
+        do{
+            document.write(d + "<br>");
+            d=d+2;
+        }
+        while(d<=15);
+    </script>
+    <h2> user login attempt</h2>
+    <div>
+         <form>
+            Password: <input type="password" id="password">
+         </form>
+         <p id="msg"></p>
+         <button onclick="Login()">Submit</button>
+    </div>
+    <script>
+   
+        
+      function Login()
+      {  var pass = document.getElementById("password").value;
+
+        if(pass=="1810")
+    {
+
+        document.getElementById("msg").innerHTML="Correct Password";
+    }
+      }
+    //   else{
+    //     document.getElementById("password").innerHTML="Incorrect Password";
+    //   }
+      
+    </script>
+</body>
+</html>
