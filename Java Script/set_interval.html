@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="mybody">
+<script>
+    var colors = ["violet","indigo","blue","green","yellow","orange","red"];
+    var mybody = document.getElementById("mybody");
+    var i=0;
+    setInterval(()=>{
+        mybody.style.backgroundColor = colors[i];
+        ++i;
+        if(i==colors.length)
+        {
+            i=0;
+        }
+    },1000)
+</script>
+</body>
+</html>
