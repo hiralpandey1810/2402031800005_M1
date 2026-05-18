@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit=" Validateform(event)">
+        <label for="username">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="contactNo">Contact no.:</label>
+        <input type="tel" id="contactNo" name="contactNo" required minlength="10" maxlength="10">
+        <br>
+        <label for="Course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="course1">B.Tech</option>
+            <option value="course2">BCA</option>
+            <option value="course3">BBA</option>
+        </select>
+        <br>
+        <button type="submit"  >Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>
+        function Validateform(event)
+        {   
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var contactNo = document.getElementById("contactNo").value;  
+            var namePattern = /^[A-Za-z ]+$/;
+            var emailPattern = /^[A-Za-z0-9_.]+@[A-Za-z0-9]+\.[a-z]{2,}$/;
+            var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d).{9,}$/;
+            var contactPattern = /^[0-9]$/;
+
+            if(!namePattern.test(name))
+        {
+            alert ("Name should only contain letters and spaces.");
+            return false;
+        }
+        if(!emailPattern.test(email))
+        {
+            alert ( "Invalid email format");
+            return false;
+        }
+        if(!passwordPattern.test(password))
+        {
+            alert( "Password should be at least 9 characters long and contain at least one letter and one number.");
+            return false;
+        }
+        if(!contactPattern.test(contactNo))
+        {
+            alert ( " Must be numbers");
+            return false;
+        }
+        alert("Form submitted successfully!");
+        return true;
+        }
+    </script>
+
+</body>
+</html>

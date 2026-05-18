@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Validation</title>
+    <title>Email Validation</title>
 
     <script>
-        function validateForm() {
-            let name = document.forms["myForm"]["fname"].value;
+        function validateEmail() {
 
-            if (name == "" && name == 0-9) {
-                alert("Name must be filled out");
+            let email = document.getElementById("email").value;
+
+            let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if(email.match(pattern)) {
+                alert("Valid Email");
+                return true;
+            }
+            else {
+                alert("Invalid Email");
                 return false;
             }
         }
@@ -17,11 +24,15 @@
 
 <body>
 
-    <form name="myForm" onsubmit="return validateForm()">
-        Name:
-        <input type="text" name="fname">
+    <h2>Email Validation Form</h2>
+
+    <form onsubmit="return validateEmail()">
+
+        Enter Email:
+        <input type="text" id="email">
 
         <input type="submit" value="Submit">
+
     </form>
 
 </body>
