@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+}
+
+/* LOGO */
+.logo img{
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    left: 150px;
+    top: 2px;
+
+}
+
+/* NAV LINKS */
+ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    color: brown;
+}
+
+/* CART ICON */
+.cart i{
+    font-size: 20px;
+    color: brown;
+    cursor: pointer;
+}
+.box1{
+    position: absolute;
+    background-color: whitesmoke;
+    align-items: center;
+    top: 100px;
+
+}
+.box img{
+    position: absolute;
+    height: 900px;
+}
+.hero{
+    height: 90vh;
+
+    background-image: url("https://tz47gb.yourbrand.studio/files/dynamicContent/sites/tz47gb/images/en/webpage_11/m66gvjjz/element_210/rwdMode_1/2400x836/main.webp");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+
+    /* background-color: rgba(0,0,0,0.5); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #9c5a5a;
+    color: white;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 300px));
+    gap: 2px;
+    padding: 2px;
+    margin-left: 18px;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    overflow:visible;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+#hh1{
+    text-align: center;
+    font-size: 40px;
+}
+#hiral{
+    background-color: lightgray;
+    height: 500px;
+    width:1225px;
+    background-size: cover;
+    position: absolute;
+    top: 1050px;
+
+}
+#nc{
+    height:100px;
+    width:250px;
+    position: absolute;
+    top: 170px;
+    left: 350px;
+}
+.txtt{
+    font-size: 30px;
+}
+.collection-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(10px,150px));
+    gap:5px;
+    padding:2px;
+    margin-left: 600px;
+    margin-top: 150px;
+}
+.collection{
+    width:200px;
+    height:150px;
+    overflow:visible;
+    background-color: black;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+}
+.collection img{
+    height: 100%;
+    width: 100%;
+    
+}
+.coll-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(10px,150px));
+    padding:2px;
+    gap:5px;
+    margin-left: 860px;
+    margin-top:50px;
+    border-style:dashed;
+     border-width: 2px;
+    border-color: black;
+}
+.coll{
+    position: absolute;
+    width:250px;
+    height:305px;
+    overflow:visible;
+    background-color: black;
+
+    top:150px;
+}
+.coll img{
+    height: 100%;
+    width: 100%;
+    
+}
