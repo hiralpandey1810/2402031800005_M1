@@ -1,4 +1,4 @@
-/* /* .counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,20 +181,4 @@
     right: 0;
     border-right-color: var(--border);
   }
-} 
-body{
-  background-color: black;
-  color: white;
-}
-.box{
-  text-align: center;
-}
-button{
-  border: none;
-  border-radius: 180px;
-
 } */
- .hiral{
-color: blueviolet;
-font-size: 70px;
- }
